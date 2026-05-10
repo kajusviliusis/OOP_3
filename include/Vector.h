@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include <utility>
 
+// pagal https://en.cppreference.com/cpp/container/vector
+
 template <typename T>
 class Vector {
 public:
