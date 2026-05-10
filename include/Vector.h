@@ -3,6 +3,7 @@
 
 #include <cstddef>
 #include <initializer_list>
+#include <stdexcept>
 
 template <typename T>
 class Vector {
@@ -106,6 +107,65 @@ public:
     ~Vector()
     {
         delete[] data_;
+    }
+
+    // element access
+    reference operator[](size_type index)
+    {
+        return data_[index];
+    }
+
+    const_reference operator[](size_type index) const
+    {
+        return data_[index];
+    }
+
+    reference at(size_type index)
+    {
+        if (index >= size_) {
+            throw std::out_of_range("Vector index out of range");
+        }
+
+        return data_[index];
+    }
+
+    const_reference at(size_type index) const
+    {
+        if (index >= size_) {
+            throw std::out_of_range("Vector index out of range");
+        }
+
+        return data_[index];
+    }
+
+    reference front()
+    {
+        return data_[0];
+    }
+
+    const_reference front() const
+    {
+        return data_[0];
+    }
+
+    reference back()
+    {
+        return data_[size_ - 1];
+    }
+
+    const_reference back() const
+    {
+        return data_[size_ - 1];
+    }
+
+    pointer data()
+    {
+        return data_;
+    }
+
+    const_pointer data() const
+    {
+        return data_;
     }
 
 
