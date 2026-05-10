@@ -168,6 +168,26 @@ public:
         return data_;
     }
 
+    // iterators
+    iterator begin()
+    {
+        return data_;
+    }
+
+    const_iterator begin() const
+    {
+        return data_;
+    }
+
+    iterator end()
+    {
+        return data_ + size_;
+    }
+
+    const_iterator end() const
+    {
+        return data_ + size_;
+    }
 
 
 
