@@ -4,6 +4,7 @@
 #include <cstddef>
 #include <initializer_list>
 #include <stdexcept>
+#include <utility>
 
 template <typename T>
 class Vector {
@@ -36,6 +37,14 @@ private:
         delete[] data_;
         data_ = newData;
         capacity_ = newCapacity;
+    }
+
+    //helper funkcija skirta push_back
+    void growIfFull()
+    {
+        if (size_ < capacity_) return;
+
+        reserve(capacity_ == 0 ? 1 : capacity_ * 2);
     }
 
 public:
@@ -234,10 +243,95 @@ public:
         reallocate(size_);
     }
 
+    // modifiers
+    void push_back(const_reference value)
+    {
+        growIfFull();
+        data_[size_] = value;
+        size_++;
+    }
 
+    void push_back(value_type&& value)
+    {
+        growIfFull();
+        data_[size_] = std::move(value);
+        size_++;
+    }
 
+    void pop_back()
+    {
+        if (size_ > 0) {
+            size_--;
+        }
+    }
+    // docs: size() returns zero, leaves the capacity() of the vector unchanged
+    void clear()
+    {
+        size_ = 0;
+        // delete[] data;
+        // data_ = nullptr;
+        // capacity_ = 0;
+    }
 
+    void resize(size_type count)
+    {
+        if (count > capacity_) {
+            reserve(count);
+        }
 
+        for (size_type i = size_; i < count; i++) {
+            data_[i] = value_type{};
+        }
+
+        size_ = count;
+    }
+
+    void resize(size_type count, const_reference value)
+    {
+        if (count > capacity_) {
+            reserve(count);
+        }
+
+        for (size_type i = size_; i < count; i++) {
+            data_[i] = value;
+        }
+
+        size_ = count;
+    }
+
+    void swap(Vector& other) noexcept
+    {
+        std::swap(data_, other.data_);
+        std::swap(size_, other.size_);
+        std::swap(capacity_, other.capacity_);
+    }
+
+    iterator erase(const_iterator pos)
+    {
+        if (size_ == 0 || pos < data_ || pos >= data_ + size_) {
+            throw std::out_of_range("Vektoriaus erase iteratorius uz ribu");
+        }
+
+        return erase(pos, pos + 1);
+    }
+
+    iterator erase(const_iterator first, const_iterator last)
+    {
+        if (first < data_ || last < first || last > data_ + size_) {
+            throw std::out_of_range("Vektoriaus erase iteratorius uz ribu");
+        }
+
+        size_type firstIndex = first - data_;
+        size_type lastIndex = last - data_;
+        size_type count = lastIndex - firstIndex;
+        // perstumia likusius elementus i kaire
+        for (size_type i = firstIndex; i + count < size_; i++) {
+            data_[i] = std::move(data_[i + count]);
+        }
+
+        size_ -= count;
+        return data_ + firstIndex;
+    }
 
 
 };
