@@ -17,8 +17,8 @@ Instaliuokite CMake, C++ kompiliatorių.
 1. Klonuoti projektą:
 
 ```
-git clone https://github.com/kajusviliusis/OOP_2.git
-cd OOP_2
+git clone https://github.com/kajusviliusis/OOP_3.git
+cd OOP_3
 ```
 2. Sukurti build directory ir kompiliuoti su CMake:
 ```
@@ -30,7 +30,7 @@ cmake --build .
 
 3. Paleisti programą:
 ```
-./OOP_2
+./OOP_3
 ```
 4. Paleisti testus:
 ```

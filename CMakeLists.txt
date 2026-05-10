@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.16)
-project(OOP_2)
+project(OOP_3)
 set(CMAKE_CXX_STANDARD 17)
 
 
-add_executable(OOP_2
+add_executable(OOP_3
         src/main.cpp
         src/my_lib.cpp
 )
 
-target_include_directories(OOP_2 PRIVATE include)
+target_include_directories(OOP_3 PRIVATE include)
 
 include(FetchContent)
 
