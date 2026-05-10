@@ -7,11 +7,6 @@
 
 template <typename T>
 class Vector {
-private:
-    T* data_;
-    std::size_t size_;
-    std::size_t capacity_;
-
 public:
     //member types
     using value_type = T;
@@ -24,6 +19,26 @@ public:
     using iterator = value_type*;
     using const_iterator = const value_type*;
 
+private:
+    pointer data_;
+    size_type size_;
+    size_type capacity_;
+
+    //helper funkcija capacity metodams, DRY :)
+    void reallocate(size_type newCapacity)
+    {
+        pointer newData = newCapacity > 0 ? new value_type[newCapacity] : nullptr;
+
+        for (size_type i = 0; i < size_; i++) {
+            newData[i] = data_[i];
+        }
+
+        delete[] data_;
+        data_ = newData;
+        capacity_ = newCapacity;
+    }
+
+public:
     //member functions
     // default konstruktorius
     Vector() : data_(nullptr), size_(0), capacity_(0) {}
@@ -123,7 +138,7 @@ public:
     reference at(size_type index)
     {
         if (index >= size_) {
-            throw std::out_of_range("Vector index out of range");
+            throw std::out_of_range("Vektoriaus indeksas uz ribu");
         }
 
         return data_[index];
@@ -132,7 +147,7 @@ public:
     const_reference at(size_type index) const
     {
         if (index >= size_) {
-            throw std::out_of_range("Vector index out of range");
+            throw std::out_of_range("Vektoriaus indeksas uz ribu");
         }
 
         return data_[index];
@@ -188,6 +203,39 @@ public:
     {
         return data_ + size_;
     }
+
+    // capacity
+    size_type size() const
+    {
+        return size_;
+    }
+
+    size_type capacity() const
+    {
+        return capacity_;
+    }
+
+    bool empty() const
+    {
+        return size_ == 0;
+    }
+
+    void reserve(size_type newCapacity)
+    {
+        if (newCapacity <= capacity_) return;
+
+        reallocate(newCapacity);
+    }
+
+    void shrink_to_fit()
+    {
+        if (capacity_ == size_) return;
+
+        reallocate(size_);
+    }
+
+
+
 
 
 
