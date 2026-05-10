@@ -336,4 +336,24 @@ public:
 
 };
 
+// non-member functions
+// comparison operatoriai
+template <typename T>
+bool operator==(const Vector<T>& lhs, const Vector<T>& rhs)
+{
+    if (lhs.size() != rhs.size()) return false;
+
+    for (std::size_t i = 0; i < lhs.size(); i++) {
+        if (lhs[i] != rhs[i]) return false;
+    }
+
+    return true;
+}
+
+template <typename T>
+bool operator!=(const Vector<T>& lhs, const Vector<T>& rhs)
+{
+    return !(lhs == rhs);
+}
+
 #endif
