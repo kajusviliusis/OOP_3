@@ -39,7 +39,7 @@ TEST(VectorTest, InicializavimoSarasoKonstruktoriusIssaugoReiksmes)
     EXPECT_EQ(v[2], 7);
 }
 
-TEST(VectorTest, CopyKonstruktoriusSukuriaNepriklausomaKopija)
+TEST(VectorTest, CopyKonstruktoriusSukuriaDeepKopija)
 {
     Vector<int> original{1, 2, 3};
     Vector<int> copy(original);
@@ -51,7 +51,7 @@ TEST(VectorTest, CopyKonstruktoriusSukuriaNepriklausomaKopija)
     EXPECT_EQ(copy.size(), original.size());
 }
 
-TEST(VectorTest, CopyAssignmentSukuriaNepriklausomaKopija)
+TEST(VectorTest, CopyAssignmentSukuriaDeepKopija)
 {
     Vector<int> original{1, 2, 3};
     Vector<int> copy;
@@ -114,8 +114,12 @@ TEST(VectorTest, FrontBackIrDataGrazinaTeisingasReiksmes)
 
     EXPECT_EQ(v.front(), 8);
     EXPECT_EQ(v.back(), 10);
-    ASSERT_NE(v.data(), nullptr);
-    EXPECT_EQ(v.data()[1], 9);
+
+    int* data = v.data();
+    ASSERT_NE(data, nullptr);
+    EXPECT_EQ(data[0], 8);
+    EXPECT_EQ(data[1], 9);
+    EXPECT_EQ(data[2], 10);
 }
 
 TEST(VectorTest, IteratoriaiVeikiaSuRangeForIrSort)
@@ -124,7 +128,7 @@ TEST(VectorTest, IteratoriaiVeikiaSuRangeForIrSort)
 
     std::sort(v.begin(), v.end());
     int sum = 0;
-    for (int value : v) {
+    for (int value : v) {   // internally naudoja iteratorius
         sum += value;
     }
 
@@ -153,8 +157,7 @@ TEST(VectorTest, ShrinkToFitSumazinaTalpaIkiDydzio)
 
     v.shrink_to_fit();
 
-    EXPECT_EQ(v.size(), 3u);
-    EXPECT_EQ(v.capacity(), 3u);
+    EXPECT_EQ(v.size(), v.capacity());
 }
 
 TEST(VectorTest, PushBackDidinaDydiIrIssaugoReiksmes)
@@ -166,7 +169,7 @@ TEST(VectorTest, PushBackDidinaDydiIrIssaugoReiksmes)
     v.push_back(3);
 
     EXPECT_EQ(v.size(), 3u);
-    EXPECT_GE(v.capacity(), v.size());
+    EXPECT_EQ(v.capacity(), 4u);
     EXPECT_EQ(v[0], 1);
     EXPECT_EQ(v[1], 2);
     EXPECT_EQ(v[2], 3);
@@ -214,7 +217,7 @@ TEST(VectorTest, ResizeSuReiksmeUzpildoNaujusElementus)
 {
     Vector<std::string> v{"a"};
 
-    v.resize(3, std::string("x"));
+    v.resize(3, "x");
 
     EXPECT_EQ(v.size(), 3u);
     EXPECT_EQ(v[0], "a");
@@ -237,7 +240,7 @@ TEST(VectorTest, EraseIntervalasPasalinaReiksmes)
 {
     Vector<int> v{1, 2, 3, 4, 5};
 
-    auto it = v.erase(v.begin() + 1, v.begin() + 4);
+    auto it = v.erase(v.begin() + 1, v.begin() + 4); // [first,last)
 
     EXPECT_EQ(v.size(), 2u);
     EXPECT_EQ(*it, 5);
