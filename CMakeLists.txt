@@ -10,6 +10,12 @@ add_executable(OOP_3
 
 target_include_directories(OOP_3 PRIVATE include)
 
+add_executable(vector_benchmark
+        src/vector_benchmark.cpp
+)
+
+target_include_directories(vector_benchmark PRIVATE include)
+
 include(FetchContent)
 
 FetchContent_Declare(
