@@ -24,6 +24,7 @@ enable_testing()
 
 add_executable(testai
         tests/studentas_test.cpp
+        tests/vector_test.cpp
         src/my_lib.cpp
 )
 
