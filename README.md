@@ -1,3 +1,6 @@
+//palygint pacios programos veikima su skirtingais vector (refactorint v3.0 kad naudotu Vector ir lygint su v1.5 saka)
+//tada pridet doxygen dokumentacija, readme.md, tada setup faila
+
 ## Programos aprašymas
 
 Programa skirta apdoroti studentų duomenis ir analizuoti jų akademinius rezultatus. Ji leidžia:
