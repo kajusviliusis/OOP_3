@@ -2,9 +2,9 @@
 #define MYLIB_H
 
 #include "Studentas.h"
+#include "Vector.h"
 
 #include <string>
-#include <vector>
 #include <deque>
 #include <list>
 #include <fstream>
@@ -16,17 +16,17 @@
 #include <chrono>
 #include <type_traits>
 
-void rodytiRezultatus(const std::vector<Studentas>& studentai);
+void rodytiRezultatus(const Vector<Studentas>& studentai);
 void generuotiPazymius(Studentas& s);
-void generuotiStudentus(std::vector<Studentas>& studentai);
-void rodytiRez(const std::vector<Studentas>& studentai);
+void generuotiStudentus(Vector<Studentas>& studentai);
+void rodytiRez(const Vector<Studentas>& studentai);
 bool rikiuotiVarda(const Studentas& A, const Studentas& B);
 bool rikiuotiPavarde(const Studentas& A, const Studentas& B);
 bool rikiuotiPagalGalutiniVid(const Studentas& A, const Studentas& B);
 bool rikiuotiPagalGalutiniMed(const Studentas& A, const Studentas& B);
-void nuskaitytiFailaTestavimui(std::vector<Studentas>& studentai, int kartai);
+void nuskaitytiFailaTestavimui(Vector<Studentas>& studentai, int kartai);
 void generuotiFaila(int studentuSk);
-void isvestiDuFailus(const std::vector<Studentas>& vargsai, const std::vector<Studentas>& kieti);
+void isvestiDuFailus(const Vector<Studentas>& vargsai, const Vector<Studentas>& kieti);
 void atliktiPirmaTyrima();
 void atliktiAntraTyrima();
 
@@ -165,7 +165,7 @@ void paskirstytiStudentusS3(Konteineris& studentai, Konteineris& vargsai)
 template <typename Konteineris>
 void atliktiAntraTyrima(int strategija) {
     using namespace std::chrono;
-    std::vector<int> kiekiai = {1000, 10000, 100000, 1000000, 10000000};
+    Vector<int> kiekiai = {1000, 10000, 100000, 1000000, 10000000};
     int rikiavimas = 3;
 
     std::cout << "-----------------------------------------------------------------------------\n";

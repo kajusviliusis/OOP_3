@@ -3,7 +3,6 @@
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
-#include <vector>
 #include <cctype>
 #include <chrono>
 #include <sstream>
@@ -27,7 +26,7 @@ double Studentas::skaiciuotiGalutiniSuMed() const
         throw std::invalid_argument("Negalima skaiciuoti medianos, truksta namu darbu ivertinimu");
     }
 
-    std::vector<int> kopija = getNd();
+    Vector<int> kopija = getNd();
     std::sort(kopija.begin(), kopija.end());
 
     int n = kopija.size();
@@ -38,7 +37,7 @@ double Studentas::skaiciuotiGalutiniSuMed() const
     return 0.4 * med + 0.6 * getEgz();
 }
 
-void rodytiRezultatus(const std::vector<Studentas>& studentai)
+void rodytiRezultatus(const Vector<Studentas>& studentai)
 {
     char skaiciavimas;
 
@@ -88,10 +87,10 @@ void generuotiPazymius(Studentas& s)
     s.setEgz(rand() % 10 + 1);
 }
 
-void generuotiStudentus(std::vector<Studentas>& studentai)
+void generuotiStudentus(Vector<Studentas>& studentai)
 {
-    std::vector<std::string> vardai = {"Jonas","Petras","Antanas","Marius","Lukas","Mantas","Darius","Andrius","Tomas","Linas"};
-    std::vector<std::string> pavardes = {"Kazlauskas","Jankauskas","Petrauskas","Paukštis","Stankevičius","Vasiliauskas","Žukauskas","Butkus","Paura","Kairys"};
+    Vector<std::string> vardai = {"Jonas","Petras","Antanas","Marius","Lukas","Mantas","Darius","Andrius","Tomas","Linas"};
+    Vector<std::string> pavardes = {"Kazlauskas","Jankauskas","Petrauskas","Paukštis","Stankevičius","Vasiliauskas","Žukauskas","Butkus","Paura","Kairys"};
 
     int studentuKiekis = rand() % 7 + 1;
 
@@ -105,7 +104,7 @@ void generuotiStudentus(std::vector<Studentas>& studentai)
     }
 }
 
-void rodytiRez(const std::vector<Studentas>& studentai)
+void rodytiRez(const Vector<Studentas>& studentai)
 {
     std::stringstream buffer;
     buffer << std::left << std::setw(20) << "Vardas" << std::setw(20) << "Pavardė" << std::setw(20)
@@ -151,7 +150,7 @@ bool rikiuotiPagalGalutiniMed(const Studentas& A, const Studentas& B) {
     return A.getGalMed() < B.getGalMed();
 }
 
-void nuskaitytiFailaTestavimui(std::vector<Studentas>& studentai, int kartai)
+void nuskaitytiFailaTestavimui(Vector<Studentas>& studentai, int kartai)
 {
     if (kartai <= 0) {
         throw std::invalid_argument("Kartai turi buti > 0");
@@ -247,7 +246,7 @@ void generuotiFaila(int studentuSk) {
     failas.close();
 }
 
-void isvestiDuFailus(const std::vector<Studentas>& vargsai, const std::vector<Studentas>& kieti) {
+void isvestiDuFailus(const Vector<Studentas>& vargsai, const Vector<Studentas>& kieti) {
 
     std::ofstream failasVargsai("vargsai.txt");
     std::ofstream failasKieti("kieti.txt");
@@ -268,7 +267,7 @@ void isvestiDuFailus(const std::vector<Studentas>& vargsai, const std::vector<St
 
 void atliktiPirmaTyrima() {
     using namespace std::chrono;
-    std::vector<int> kiekiai = {1000, 10000, 100000, 1000000, 10000000};
+    Vector<int> kiekiai = {1000, 10000, 100000, 1000000, 10000000};
 
     std::cout << "----------------------------------------------------------\n";
     std::cout << std::left << std::setw(20) << "Irasu kiekis" << "Kurimo trukme (s)\n";
