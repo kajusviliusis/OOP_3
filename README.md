@@ -1,4 +1,3 @@
-//palygint pacios programos veikima su skirtingais vector (refactorint v3.0 kad naudotu Vector ir lygint su v1.5 saka)
 //tada pridet doxygen dokumentacija, readme.md, tada setup faila
 
 ## Programos aprašymas
@@ -39,6 +38,26 @@ cmake --build .
 ```
 ./testai
 ```
+
+## v3.0
+aprasas ...
+
+5 metodu realizacijos aprodytos ...
+
+benchmarko lenteles dvi (s) kita (realloc) ...
+
+
+
+spartos palyginimas programos ...
+
+| Įrašai    | Vector (s) | std::vector (s) | Skirtumas (s) |
+|------------|-------------|-----------------|----------------|
+| 1 000      | 0.0112      | 0.0092          | -0.0020        |
+| 10 000     | 0.0335      | 0.0404          | 0.0069         |
+| 100 000    | 0.2892      | 0.4186          | 0.1294         |
+| 1 000 000  | 2.3243      | 3.3789          | 1.0546         |
+| 10 000 000 | 22.9272     | 31.2283         | 8.3011         |
+
 
 ## v2.0
 
