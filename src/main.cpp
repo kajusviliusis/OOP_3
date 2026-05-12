@@ -4,18 +4,17 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <vector>
 #include <ctime>
 
 int main()
 {
-  std::vector<Studentas> studentai;
+  Vector<Studentas> studentai;
   int pasirinkimas;
   bool testi=true;
   srand(time(nullptr));
   std::string failoVardas;
-  std::vector<Studentas> vargsai;
-  std::vector<Studentas> kieti;
+  Vector<Studentas> vargsai;
+  Vector<Studentas> kieti;
 
   while(testi){
     try {
@@ -194,7 +193,7 @@ int main()
 
           int tipas;
           while (true) {
-              std::cout << "Pasirinkite konteineri: vector(1), deque(2), list(3)\n";
+              std::cout << "Pasirinkite konteineri: Vector(1), deque(2), list(3)\n";
               if (std::cin >> tipas && (tipas >= 1 && tipas <= 3)) break;
               std::cout << "Klaida, iveskite 1-3\n";
               std::cin.clear();
@@ -211,8 +210,8 @@ int main()
           }
 
           if (tipas == 1) {
-            std::cout << "Atliekamas tyrimas su std::vector, strategija: " << strategija << "\n";
-            atliktiAntraTyrima<std::vector<Studentas>>(strategija);
+            std::cout << "Atliekamas tyrimas su Vector, strategija: " << strategija << "\n";
+            atliktiAntraTyrima<Vector<Studentas>>(strategija);
           } else if (tipas == 2) {
             std::cout << "Atliekamas tyrimas su std::deque, strategija: " << strategija << "\n";
             atliktiAntraTyrima<std::deque<Studentas>>(strategija);

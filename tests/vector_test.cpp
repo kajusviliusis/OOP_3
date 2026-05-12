@@ -275,12 +275,12 @@ TEST(VectorTest, SaugoKopijuojaIrPerkeliaStudentoObjektus)
     EXPECT_EQ(moved[0].getVardas(), "Jonas");
     EXPECT_EQ(moved[0].getPavarde(), "Jonaitis");
     EXPECT_EQ(moved[0].getEgz(), 10);
-    EXPECT_EQ(moved[0].getNd(), (std::vector<int>{8, 9}));
+    EXPECT_EQ(moved[0].getNd(), (Vector<int>{8, 9}));
 
     EXPECT_EQ(moved[1].getVardas(), "Ona");
     EXPECT_EQ(moved[1].getPavarde(), "Onaite");
     EXPECT_EQ(moved[1].getEgz(), 7);
-    EXPECT_EQ(moved[1].getNd(), (std::vector<int>{6, 8}));
+    EXPECT_EQ(moved[1].getNd(), (Vector<int>{6, 8}));
 
     EXPECT_TRUE(copy.empty());
     EXPECT_EQ(copy.size(), 0u);
