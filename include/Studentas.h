@@ -1,24 +1,24 @@
 #ifndef STUDENTAS_H
 #define STUDENTAS_H
 
+#include "Vector.h"
 #include "Zmogus.h"
 
 #include <stdexcept>
 #include <string>
-#include <vector>
 #include <iostream>
 #include <sstream>
 
 class Studentas : public Zmogus{
 private:
     int egz_;
-    std::vector<int> nd_;
+    Vector<int> nd_;
     double galVid_;
     double galMed_;
 
 public:
     Studentas() : Zmogus("", ""), egz_(0), nd_{}, galVid_(0.0), galMed_(0.0) {}
-    Studentas(const std::string& vardas, const std::string& pavarde, int egz, const std::vector<int>& nd)
+    Studentas(const std::string& vardas, const std::string& pavarde, int egz, const Vector<int>& nd)
        : Zmogus(vardas, pavarde), egz_(egz), nd_{nd}, galVid_(0.0), galMed_(0.0) {}
 
     // copy konstruktorius
@@ -116,7 +116,7 @@ public:
 }
 
     int getEgz() const { return egz_; }
-    const std::vector<int>& getNd() const { return nd_; }
+    const Vector<int>& getNd() const { return nd_; }
     double getGalVid() const { return galVid_; }
     double getGalMed() const { return galMed_; }
 
@@ -137,4 +137,3 @@ public:
 };
 
 #endif
-
