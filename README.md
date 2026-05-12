@@ -1,4 +1,4 @@
-//tada pridet doxygen dokumentacija, tada setup faila
+//pridet 5 metodu aprasa dar, doxygen dokumentacija, tada setup faila
 
 ## Programos aprašymas
 
@@ -40,6 +40,87 @@ cmake --build .
 ```
 
 ## v3.0
+
+v3.0 programos versijoje realizuota nuosava <code>Vector</code> klasė, naudojama vietoje standartinio <code>std::vector</code> konteinerio. Taip pat parašyti šios klasės unit testai, ir jos veikimo greitis palygintas su <code>std::vector</code>.
+
+#### Realizuotos funkcijos:
+
+- **Konstruktoriai:** default, su pradiniu dydžiu, initializer list, copy, move
+- **Elementų prieiga:** `operator[]`, `at()`, `front()`, `back()`, `data()`
+- **Iteratoriai:** `begin()`, `end()`
+- **Talpa:** `size()`, `capacity()`, `empty()`, `reserve()`, `shrink_to_fit()`
+- **Modifikatoriai:** `push_back()`, `pop_back()`, `clear()`, `resize()`, `erase()`, `swap()`
+- **Operatoriai:** `==`, `!=`
+
+### Funkcijų pavyzdžiai
+
+#### 1. `push_back()`
+
+Prideda elementą į vektoriaus galą.
+
+```cpp
+Vector<int> v = {1, 2, 3};
+
+v.push_back(4);
+
+// v = {1, 2, 3, 4}
+// v.size() = 4
+```
+
+#### 2. `operator[]`
+
+Leidžia pasiekti elementą pagal indeksą.
+
+```cpp
+Vector<int> v = {5, 6, 7};
+
+v[1] = 10;
+
+// v = {5, 10, 7}
+```
+
+#### 3. `at()`
+
+Pasiekia elementą su ribų tikrinimu.
+
+```cpp
+Vector<int> v = {1, 2, 3};
+
+v.at(0); // 1
+v.at(2); // 3
+```
+
+Bandant pasiekti neegzistuojantį indeksą išmetama `std::out_of_range` išimtis.
+
+```cpp
+v.at(5); // std::out_of_range
+```
+
+#### 4. `reserve()`
+
+Padidina vektoriaus talpą nekeisdamas dydžio.
+
+```cpp
+Vector<int> v;
+
+v.reserve(100);
+
+// v.size() = 0
+// v.capacity() >= 100
+```
+
+#### 5. `erase()`
+
+Pašalina vieną elementą arba intervalą.
+
+```cpp
+Vector<int> v = {1, 2, 3, 4, 5};
+
+v.erase(v.begin() + 1, v.begin() + 4);
+
+// v = {1, 5}
+```
+### Palyginimas
 Šio testo metu buvo matuojamas <code>std::vector</code> ir savarankiškai realizuotos <code>Vector</code> užpildymo greitis, palaipsniui didinant elementų kiekį nuo 10000 iki 100000000 elementų.
 
 | Vektoriaus elementų (Studentų) kiekis | Programos veikimo laikas std::vector (s) | Programos veikimo laikas Vector (s) |
@@ -58,7 +139,7 @@ Atlikus testavimą su 100000000 elementų, nustatyta, kad tiek <code>std::vector
 | 100000000 | 28 | 28 |
 
 
-Programos spartos palyginimas su <code>std::vector</code> ir <code>Vector</code>. Testavimas atliekamas naudojant 3 strategiją, lyginant v1.5 programos versiją su dabartine (v3.0) versija, kurioje įgyvendinta <code>Vector</code> klasė.
+Programos spartos palyginimas su <code>std::vector</code> ir <code>Vector</code>. Testavimas atliekamas naudojant 3 strategiją, lyginant v1.5 programos versiją su dabartine (v3.0) versija.
 
 | Įrašai    | Vector (s) | std::vector (s) | Skirtumas (s) |
 |------------|-------------|-----------------|----------------|
