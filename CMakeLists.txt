@@ -16,26 +16,28 @@ add_executable(vector_benchmark
 
 target_include_directories(vector_benchmark PRIVATE include)
 
-include(FetchContent)
+if(NOT CMAKE_CROSSCOMPILING)
+    include(FetchContent)
 
-FetchContent_Declare(
-        googletest
-        URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
-)
+    FetchContent_Declare(
+            googletest
+            URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
+    )
 
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    FetchContent_MakeAvailable(googletest)
 
-enable_testing()
+    enable_testing()
 
-add_executable(testai
-        tests/studentas_test.cpp
-        tests/vector_test.cpp
-        src/my_lib.cpp
-)
+    add_executable(testai
+            tests/studentas_test.cpp
+            tests/vector_test.cpp
+            src/my_lib.cpp
+    )
 
-target_include_directories(testai PRIVATE include)
-target_link_libraries(testai PRIVATE GTest::gtest_main)
+    target_include_directories(testai PRIVATE include)
+    target_link_libraries(testai PRIVATE GTest::gtest_main)
 
-include(GoogleTest)
-gtest_discover_tests(testai)
+    include(GoogleTest)
+    gtest_discover_tests(testai)
+endif()
