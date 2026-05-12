@@ -9,12 +9,14 @@ add_executable(OOP_3
 )
 
 target_include_directories(OOP_3 PRIVATE include)
+target_link_options(OOP_3 PRIVATE -static -static-libgcc -static-libstdc++)
 
 add_executable(vector_benchmark
         src/vector_benchmark.cpp
 )
 
 target_include_directories(vector_benchmark PRIVATE include)
+target_link_options(vector_benchmark PRIVATE -static -static-libgcc -static-libstdc++)
 
 if(NOT CMAKE_CROSSCOMPILING)
     include(FetchContent)
