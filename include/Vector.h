@@ -60,6 +60,17 @@ public:
           size_(count),
           capacity_(count) {}
 
+    //konstruktorius su pradiniu size ir reiksme
+    Vector(size_type count, const_reference value)
+        : data_(count > 0 ? new value_type[count] : nullptr),
+          size_(count),
+          capacity_(count)
+    {
+        for (size_type i = 0; i < size_; i++) {
+            data_[i] = value;
+        }
+    }
+
     //initializer list konstruktorius
     Vector(std::initializer_list<value_type> values)
         : data_(values.size() > 0 ? new value_type[values.size()] : nullptr),
