@@ -1,12 +1,5 @@
 var searchData=
 [
-  ['generuotifaila_0',['generuotifaila',['../my__lib_8h.html#ae61f71c380bfa061ec1cb48611ce3d90',1,'generuotiFaila(int studentuSk):&#160;my_lib.cpp'],['../my__lib_8cpp.html#ae61f71c380bfa061ec1cb48611ce3d90',1,'generuotiFaila(int studentuSk):&#160;my_lib.cpp']]],
-  ['generuotipazymius_1',['generuotipazymius',['../my__lib_8h.html#a4b67dd0dc00728a30a6dfd340ec54ad6',1,'generuotiPazymius(Studentas &amp;s):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a4b67dd0dc00728a30a6dfd340ec54ad6',1,'generuotiPazymius(Studentas &amp;s):&#160;my_lib.cpp']]],
-  ['generuotistudentus_2',['generuotistudentus',['../my__lib_8h.html#a9691bf4330330f795de00757a31c3c09',1,'generuotiStudentus(std::vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a9691bf4330330f795de00757a31c3c09',1,'generuotiStudentus(std::vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp']]],
-  ['getegz_3',['getEgz',['../classStudentas.html#a2f9dcb2fef2e6b3dbc1581779a90a68a',1,'Studentas']]],
-  ['getgalmed_4',['getGalMed',['../classStudentas.html#af157500244ee9c186e4058c87327027b',1,'Studentas']]],
-  ['getgalvid_5',['getGalVid',['../classStudentas.html#a3327d48d943ec4ec91feb359042568d9',1,'Studentas']]],
-  ['getnd_6',['getNd',['../classStudentas.html#a61b219cdeb4b697c2fa547f4b1a256c2',1,'Studentas']]],
-  ['getpavarde_7',['getPavarde',['../classZmogus.html#af6fa0216be160cd70589a193709a0b36',1,'Zmogus']]],
-  ['getvardas_8',['getVardas',['../classZmogus.html#acf4a7481cb123bbb30cb82dd50102ebd',1,'Zmogus']]]
+  ['back_0',['back',['../classVector.html#a8abc3f8273089dadf91fb8eaca0676e6',1,'Vector::back()'],['../classVector.html#a66ecda4d7c3a5d0260451be6f2e30d30',1,'Vector::back() const']]],
+  ['begin_1',['begin',['../classVector.html#a466e8c045ea10d62c28b689888e9fe5a',1,'Vector::begin()'],['../classVector.html#a514c5f6246f07f0012f1d00912838b19',1,'Vector::begin() const']]]
 ];

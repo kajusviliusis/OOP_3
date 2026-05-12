@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nuskaitytifaila_0',['nuskaitytiFaila',['../my__lib_8h.html#ac2efde9f03706ed11b63492a42962d2c',1,'my_lib.h']]],
-  ['nuskaitytifailatestavimui_1',['nuskaitytifailatestavimui',['../my__lib_8h.html#a2cef6a28805a2e6f70c2ae0af31c497c',1,'nuskaitytiFailaTestavimui(std::vector&lt; Studentas &gt; &amp;studentai, int kartai):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a2cef6a28805a2e6f70c2ae0af31c497c',1,'nuskaitytiFailaTestavimui(std::vector&lt; Studentas &gt; &amp;studentai, int kartai):&#160;my_lib.cpp']]]
+  ['empty_0',['empty',['../classVector.html#ad688a8a0dfbd07ea63d838058a436f79',1,'Vector']]],
+  ['end_1',['end',['../classVector.html#ae288fa619188bff101d5300b8aaf9a90',1,'Vector::end()'],['../classVector.html#a3f5f39e8ec9f506664b259299e79c485',1,'Vector::end() const']]],
+  ['erase_2',['erase',['../classVector.html#ada08ce2d41733da63bdeac9901d48a74',1,'Vector::erase(const_iterator pos)'],['../classVector.html#a4c79ccc14e48bf7efed8d57233b1d3ff',1,'Vector::erase(const_iterator first, const_iterator last)']]]
 ];

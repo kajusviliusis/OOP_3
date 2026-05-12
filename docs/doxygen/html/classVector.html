@@ -1,0 +1,1384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OOP_3: Vector&lt; T &gt; Klasė Šablonas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">OOP_3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Paieška');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Vieši Tipai</a> &#124;
+<a href="#pub-methods">Vieši Metodai</a> &#124;
+<a href="classVector-members.html">Visų narių sąrašas</a>  </div>
+  <div class="headertitle"><div class="title">Vector&lt; T &gt; Klasė Šablonas</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Vector_8h_source.html">Vector.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Vieši Tipai</h2></td></tr>
+<tr class="memitem:aa0d46e34338185ed330102229ecb4b0e" id="r_aa0d46e34338185ed330102229ecb4b0e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> = T</td></tr>
+<tr class="separator:aa0d46e34338185ed330102229ecb4b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafb4cad9801440d5379d777088cf3ef" id="r_abafb4cad9801440d5379d777088cf3ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> = std::size_t</td></tr>
+<tr class="separator:abafb4cad9801440d5379d777088cf3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46db24fc8c2e8b3913fa4ff43546d344" id="r_a46db24fc8c2e8b3913fa4ff43546d344"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a46db24fc8c2e8b3913fa4ff43546d344">difference_type</a> = std::ptrdiff_t</td></tr>
+<tr class="separator:a46db24fc8c2e8b3913fa4ff43546d344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590045eeb20d3c474dffbada9d9b59d3" id="r_a590045eeb20d3c474dffbada9d9b59d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a> = <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &amp;</td></tr>
+<tr class="separator:a590045eeb20d3c474dffbada9d9b59d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900" id="r_a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> = const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &amp;</td></tr>
+<tr class="separator:a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afa677a40bd18d4dabc37bf5984c7d7" id="r_a5afa677a40bd18d4dabc37bf5984c7d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a5afa677a40bd18d4dabc37bf5984c7d7">pointer</a> = <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> *</td></tr>
+<tr class="separator:a5afa677a40bd18d4dabc37bf5984c7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a1db557f6707983a5ac4b9fe2a5b21" id="r_a74a1db557f6707983a5ac4b9fe2a5b21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a74a1db557f6707983a5ac4b9fe2a5b21">const_pointer</a> = const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> *</td></tr>
+<tr class="separator:a74a1db557f6707983a5ac4b9fe2a5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da7cf711e923d5d827d42daeadd1fd4" id="r_a9da7cf711e923d5d827d42daeadd1fd4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a> = <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> *</td></tr>
+<tr class="separator:a9da7cf711e923d5d827d42daeadd1fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9031954e9b063c861cc7a2838dd9c12" id="r_af9031954e9b063c861cc7a2838dd9c12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> = const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> *</td></tr>
+<tr class="separator:af9031954e9b063c861cc7a2838dd9c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Vieši Metodai</h2></td></tr>
+<tr class="memitem:a39d6069675db4ecfc1ab81d440da759a" id="r_a39d6069675db4ecfc1ab81d440da759a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a39d6069675db4ecfc1ab81d440da759a">Vector</a> ()</td></tr>
+<tr class="separator:a39d6069675db4ecfc1ab81d440da759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a099d06189fc2ee680b5c3aee4fa81" id="r_a59a099d06189fc2ee680b5c3aee4fa81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a59a099d06189fc2ee680b5c3aee4fa81">Vector</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> count)</td></tr>
+<tr class="separator:a59a099d06189fc2ee680b5c3aee4fa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742dfc06504bae711d41e89eb9a3b11f" id="r_a742dfc06504bae711d41e89eb9a3b11f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a742dfc06504bae711d41e89eb9a3b11f">Vector</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> count, <a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> value)</td></tr>
+<tr class="separator:a742dfc06504bae711d41e89eb9a3b11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd812faba9882eb5fa1c751919875443" id="r_acd812faba9882eb5fa1c751919875443"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#acd812faba9882eb5fa1c751919875443">Vector</a> (std::initializer_list&lt; <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &gt; values)</td></tr>
+<tr class="separator:acd812faba9882eb5fa1c751919875443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940f94b7c4a1c15a65a1ab6e13859dfe" id="r_a940f94b7c4a1c15a65a1ab6e13859dfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a940f94b7c4a1c15a65a1ab6e13859dfe">Vector</a> (const <a class="el" href="classVector.html">Vector</a> &amp;other)</td></tr>
+<tr class="separator:a940f94b7c4a1c15a65a1ab6e13859dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe37b54a47d28015829196cb5abec05" id="r_a2fe37b54a47d28015829196cb5abec05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html">Vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a2fe37b54a47d28015829196cb5abec05">operator=</a> (const <a class="el" href="classVector.html">Vector</a> &amp;other)</td></tr>
+<tr class="separator:a2fe37b54a47d28015829196cb5abec05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed9bb7852ccee071f8418d10182927f" id="r_a5ed9bb7852ccee071f8418d10182927f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a5ed9bb7852ccee071f8418d10182927f">Vector</a> (<a class="el" href="classVector.html">Vector</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a5ed9bb7852ccee071f8418d10182927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a5d1c7410208d7ce8f13497e31dd87" id="r_ac7a5d1c7410208d7ce8f13497e31dd87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html">Vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#ac7a5d1c7410208d7ce8f13497e31dd87">operator=</a> (<a class="el" href="classVector.html">Vector</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:ac7a5d1c7410208d7ce8f13497e31dd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd524fac19e6d3d69db5198ffe2952b0" id="r_afd524fac19e6d3d69db5198ffe2952b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#afd524fac19e6d3d69db5198ffe2952b0">~Vector</a> ()</td></tr>
+<tr class="separator:afd524fac19e6d3d69db5198ffe2952b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d74c42f23507143e398fa100afb0a8" id="r_a33d74c42f23507143e398fa100afb0a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a33d74c42f23507143e398fa100afb0a8">operator[]</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> index)</td></tr>
+<tr class="separator:a33d74c42f23507143e398fa100afb0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7b22c1691e059676f60734730e9b91" id="r_a2e7b22c1691e059676f60734730e9b91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a2e7b22c1691e059676f60734730e9b91">operator[]</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> index) const</td></tr>
+<tr class="separator:a2e7b22c1691e059676f60734730e9b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c026fe172f471e4ff721d295cae60f" id="r_a12c026fe172f471e4ff721d295cae60f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a12c026fe172f471e4ff721d295cae60f">at</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> index)</td></tr>
+<tr class="separator:a12c026fe172f471e4ff721d295cae60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd75ac96e78cb026fdebe91b64745c1b" id="r_abd75ac96e78cb026fdebe91b64745c1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#abd75ac96e78cb026fdebe91b64745c1b">at</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> index) const</td></tr>
+<tr class="separator:abd75ac96e78cb026fdebe91b64745c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2e14b2a9a0041c783b5ad44dd59593" id="r_a2f2e14b2a9a0041c783b5ad44dd59593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a2f2e14b2a9a0041c783b5ad44dd59593">front</a> ()</td></tr>
+<tr class="separator:a2f2e14b2a9a0041c783b5ad44dd59593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dc531e4c79c33f8e7d4574a155f529" id="r_a78dc531e4c79c33f8e7d4574a155f529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a78dc531e4c79c33f8e7d4574a155f529">front</a> () const</td></tr>
+<tr class="separator:a78dc531e4c79c33f8e7d4574a155f529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abc3f8273089dadf91fb8eaca0676e6" id="r_a8abc3f8273089dadf91fb8eaca0676e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a8abc3f8273089dadf91fb8eaca0676e6">back</a> ()</td></tr>
+<tr class="separator:a8abc3f8273089dadf91fb8eaca0676e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ecda4d7c3a5d0260451be6f2e30d30" id="r_a66ecda4d7c3a5d0260451be6f2e30d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a66ecda4d7c3a5d0260451be6f2e30d30">back</a> () const</td></tr>
+<tr class="separator:a66ecda4d7c3a5d0260451be6f2e30d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164c45b1093a4015b26deeeb3df509b2" id="r_a164c45b1093a4015b26deeeb3df509b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a5afa677a40bd18d4dabc37bf5984c7d7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a164c45b1093a4015b26deeeb3df509b2">data</a> ()</td></tr>
+<tr class="separator:a164c45b1093a4015b26deeeb3df509b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2bdec8192f6d56b5ffc1dc65b8e2c5" id="r_a6c2bdec8192f6d56b5ffc1dc65b8e2c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a74a1db557f6707983a5ac4b9fe2a5b21">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a6c2bdec8192f6d56b5ffc1dc65b8e2c5">data</a> () const</td></tr>
+<tr class="separator:a6c2bdec8192f6d56b5ffc1dc65b8e2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466e8c045ea10d62c28b689888e9fe5a" id="r_a466e8c045ea10d62c28b689888e9fe5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a466e8c045ea10d62c28b689888e9fe5a">begin</a> ()</td></tr>
+<tr class="separator:a466e8c045ea10d62c28b689888e9fe5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514c5f6246f07f0012f1d00912838b19" id="r_a514c5f6246f07f0012f1d00912838b19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a514c5f6246f07f0012f1d00912838b19">begin</a> () const</td></tr>
+<tr class="separator:a514c5f6246f07f0012f1d00912838b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288fa619188bff101d5300b8aaf9a90" id="r_ae288fa619188bff101d5300b8aaf9a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#ae288fa619188bff101d5300b8aaf9a90">end</a> ()</td></tr>
+<tr class="separator:ae288fa619188bff101d5300b8aaf9a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5f39e8ec9f506664b259299e79c485" id="r_a3f5f39e8ec9f506664b259299e79c485"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a3f5f39e8ec9f506664b259299e79c485">end</a> () const</td></tr>
+<tr class="separator:a3f5f39e8ec9f506664b259299e79c485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7e854146e2b56c2c7149eddbc0a1e8" id="r_a9e7e854146e2b56c2c7149eddbc0a1e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a9e7e854146e2b56c2c7149eddbc0a1e8">size</a> () const</td></tr>
+<tr class="separator:a9e7e854146e2b56c2c7149eddbc0a1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320c4a64ac1344fd33d6ef11bfd09f30" id="r_a320c4a64ac1344fd33d6ef11bfd09f30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a320c4a64ac1344fd33d6ef11bfd09f30">capacity</a> () const</td></tr>
+<tr class="separator:a320c4a64ac1344fd33d6ef11bfd09f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad688a8a0dfbd07ea63d838058a436f79" id="r_ad688a8a0dfbd07ea63d838058a436f79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#ad688a8a0dfbd07ea63d838058a436f79">empty</a> () const</td></tr>
+<tr class="separator:ad688a8a0dfbd07ea63d838058a436f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd9c955299805531f0e8924946f9fd5" id="r_a2fd9c955299805531f0e8924946f9fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a2fd9c955299805531f0e8924946f9fd5">reserve</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> newCapacity)</td></tr>
+<tr class="separator:a2fd9c955299805531f0e8924946f9fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6454ce193263b8000d4c18cb0c3a0c8" id="r_ad6454ce193263b8000d4c18cb0c3a0c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#ad6454ce193263b8000d4c18cb0c3a0c8">shrink_to_fit</a> ()</td></tr>
+<tr class="separator:ad6454ce193263b8000d4c18cb0c3a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f3da8ad294c0d45b2b41eb28ce0a8c" id="r_a28f3da8ad294c0d45b2b41eb28ce0a8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a28f3da8ad294c0d45b2b41eb28ce0a8c">push_back</a> (<a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> value)</td></tr>
+<tr class="separator:a28f3da8ad294c0d45b2b41eb28ce0a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab26fb01ec95c0b58164bedcd3097ff9" id="r_aab26fb01ec95c0b58164bedcd3097ff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#aab26fb01ec95c0b58164bedcd3097ff9">push_back</a> (<a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &amp;&amp;value)</td></tr>
+<tr class="separator:aab26fb01ec95c0b58164bedcd3097ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcba035109febbe55cba2a25f8483ba6" id="r_adcba035109febbe55cba2a25f8483ba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#adcba035109febbe55cba2a25f8483ba6">pop_back</a> ()</td></tr>
+<tr class="separator:adcba035109febbe55cba2a25f8483ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ad98b135472b0ebc5d6cb3ae5d0085" id="r_a32ad98b135472b0ebc5d6cb3ae5d0085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a32ad98b135472b0ebc5d6cb3ae5d0085">clear</a> ()</td></tr>
+<tr class="separator:a32ad98b135472b0ebc5d6cb3ae5d0085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33cb6ea7ef1dd4676db9d77a8c66e48" id="r_aa33cb6ea7ef1dd4676db9d77a8c66e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#aa33cb6ea7ef1dd4676db9d77a8c66e48">resize</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> count)</td></tr>
+<tr class="separator:aa33cb6ea7ef1dd4676db9d77a8c66e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808bc52f35d2d195c09249cd1043a7e1" id="r_a808bc52f35d2d195c09249cd1043a7e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a808bc52f35d2d195c09249cd1043a7e1">resize</a> (<a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> count, <a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> value)</td></tr>
+<tr class="separator:a808bc52f35d2d195c09249cd1043a7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04719915f34b27674e1eca2c42e48eb2" id="r_a04719915f34b27674e1eca2c42e48eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a04719915f34b27674e1eca2c42e48eb2">swap</a> (<a class="el" href="classVector.html">Vector</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a04719915f34b27674e1eca2c42e48eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada08ce2d41733da63bdeac9901d48a74" id="r_ada08ce2d41733da63bdeac9901d48a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#ada08ce2d41733da63bdeac9901d48a74">erase</a> (<a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> pos)</td></tr>
+<tr class="separator:ada08ce2d41733da63bdeac9901d48a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c79ccc14e48bf7efed8d57233b1d3ff" id="r_a4c79ccc14e48bf7efed8d57233b1d3ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVector.html#a4c79ccc14e48bf7efed8d57233b1d3ff">erase</a> (<a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> first, <a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> last)</td></tr>
+<tr class="separator:a4c79ccc14e48bf7efed8d57233b1d3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Tipo Aprašymo Dokumentacija</h2>
+<a id="af9031954e9b063c861cc7a2838dd9c12" name="af9031954e9b063c861cc7a2838dd9c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9031954e9b063c861cc7a2838dd9c12">&#9670;&#160;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::const_iterator =  const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74a1db557f6707983a5ac4b9fe2a5b21" name="a74a1db557f6707983a5ac4b9fe2a5b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a1db557f6707983a5ac4b9fe2a5b21">&#9670;&#160;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::const_pointer =  const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900" name="a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">&#9670;&#160;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::const_reference =  const <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46db24fc8c2e8b3913fa4ff43546d344" name="a46db24fc8c2e8b3913fa4ff43546d344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46db24fc8c2e8b3913fa4ff43546d344">&#9670;&#160;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::difference_type =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9da7cf711e923d5d827d42daeadd1fd4" name="a9da7cf711e923d5d827d42daeadd1fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da7cf711e923d5d827d42daeadd1fd4">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::iterator =  <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5afa677a40bd18d4dabc37bf5984c7d7" name="a5afa677a40bd18d4dabc37bf5984c7d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afa677a40bd18d4dabc37bf5984c7d7">&#9670;&#160;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::pointer =  <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a590045eeb20d3c474dffbada9d9b59d3" name="a590045eeb20d3c474dffbada9d9b59d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590045eeb20d3c474dffbada9d9b59d3">&#9670;&#160;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::reference =  <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abafb4cad9801440d5379d777088cf3ef" name="abafb4cad9801440d5379d777088cf3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafb4cad9801440d5379d777088cf3ef">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::size_type =  std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0d46e34338185ed330102229ecb4b0e" name="aa0d46e34338185ed330102229ecb4b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d46e34338185ed330102229ecb4b0e">&#9670;&#160;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::value_type =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Konstruktoriaus ir Destruktoriaus Dokumentacija</h2>
+<a id="a39d6069675db4ecfc1ab81d440da759a" name="a39d6069675db4ecfc1ab81d440da759a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d6069675db4ecfc1ab81d440da759a">&#9670;&#160;</a></span>Vector() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59a099d06189fc2ee680b5c3aee4fa81" name="a59a099d06189fc2ee680b5c3aee4fa81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a099d06189fc2ee680b5c3aee4fa81">&#9670;&#160;</a></span>Vector() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a742dfc06504bae711d41e89eb9a3b11f" name="a742dfc06504bae711d41e89eb9a3b11f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a742dfc06504bae711d41e89eb9a3b11f">&#9670;&#160;</a></span>Vector() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd812faba9882eb5fa1c751919875443" name="acd812faba9882eb5fa1c751919875443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd812faba9882eb5fa1c751919875443">&#9670;&#160;</a></span>Vector() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &gt;&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a940f94b7c4a1c15a65a1ab6e13859dfe" name="a940f94b7c4a1c15a65a1ab6e13859dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940f94b7c4a1c15a65a1ab6e13859dfe">&#9670;&#160;</a></span>Vector() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ed9bb7852ccee071f8418d10182927f" name="a5ed9bb7852ccee071f8418d10182927f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed9bb7852ccee071f8418d10182927f">&#9670;&#160;</a></span>Vector() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;<a class="el" href="classVector.html">::Vector</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd524fac19e6d3d69db5198ffe2952b0" name="afd524fac19e6d3d69db5198ffe2952b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd524fac19e6d3d69db5198ffe2952b0">&#9670;&#160;</a></span>~Vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a>&lt; T &gt;::~<a class="el" href="classVector.html">Vector</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Metodų Dokumentacija</h2>
+<a id="a12c026fe172f471e4ff721d295cae60f" name="a12c026fe172f471e4ff721d295cae60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c026fe172f471e4ff721d295cae60f">&#9670;&#160;</a></span>at() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd75ac96e78cb026fdebe91b64745c1b" name="abd75ac96e78cb026fdebe91b64745c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd75ac96e78cb026fdebe91b64745c1b">&#9670;&#160;</a></span>at() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8abc3f8273089dadf91fb8eaca0676e6" name="a8abc3f8273089dadf91fb8eaca0676e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abc3f8273089dadf91fb8eaca0676e6">&#9670;&#160;</a></span>back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66ecda4d7c3a5d0260451be6f2e30d30" name="a66ecda4d7c3a5d0260451be6f2e30d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ecda4d7c3a5d0260451be6f2e30d30">&#9670;&#160;</a></span>back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a466e8c045ea10d62c28b689888e9fe5a" name="a466e8c045ea10d62c28b689888e9fe5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a466e8c045ea10d62c28b689888e9fe5a">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a514c5f6246f07f0012f1d00912838b19" name="a514c5f6246f07f0012f1d00912838b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514c5f6246f07f0012f1d00912838b19">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a320c4a64ac1344fd33d6ef11bfd09f30" name="a320c4a64ac1344fd33d6ef11bfd09f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320c4a64ac1344fd33d6ef11bfd09f30">&#9670;&#160;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32ad98b135472b0ebc5d6cb3ae5d0085" name="a32ad98b135472b0ebc5d6cb3ae5d0085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ad98b135472b0ebc5d6cb3ae5d0085">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a164c45b1093a4015b26deeeb3df509b2" name="a164c45b1093a4015b26deeeb3df509b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164c45b1093a4015b26deeeb3df509b2">&#9670;&#160;</a></span>data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a5afa677a40bd18d4dabc37bf5984c7d7">pointer</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c2bdec8192f6d56b5ffc1dc65b8e2c5" name="a6c2bdec8192f6d56b5ffc1dc65b8e2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2bdec8192f6d56b5ffc1dc65b8e2c5">&#9670;&#160;</a></span>data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a74a1db557f6707983a5ac4b9fe2a5b21">const_pointer</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad688a8a0dfbd07ea63d838058a436f79" name="ad688a8a0dfbd07ea63d838058a436f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad688a8a0dfbd07ea63d838058a436f79">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae288fa619188bff101d5300b8aaf9a90" name="ae288fa619188bff101d5300b8aaf9a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae288fa619188bff101d5300b8aaf9a90">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f5f39e8ec9f506664b259299e79c485" name="a3f5f39e8ec9f506664b259299e79c485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5f39e8ec9f506664b259299e79c485">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c79ccc14e48bf7efed8d57233b1d3ff" name="a4c79ccc14e48bf7efed8d57233b1d3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c79ccc14e48bf7efed8d57233b1d3ff">&#9670;&#160;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada08ce2d41733da63bdeac9901d48a74" name="ada08ce2d41733da63bdeac9901d48a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada08ce2d41733da63bdeac9901d48a74">&#9670;&#160;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a9da7cf711e923d5d827d42daeadd1fd4">iterator</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#af9031954e9b063c861cc7a2838dd9c12">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f2e14b2a9a0041c783b5ad44dd59593" name="a2f2e14b2a9a0041c783b5ad44dd59593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2e14b2a9a0041c783b5ad44dd59593">&#9670;&#160;</a></span>front() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78dc531e4c79c33f8e7d4574a155f529" name="a78dc531e4c79c33f8e7d4574a155f529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dc531e4c79c33f8e7d4574a155f529">&#9670;&#160;</a></span>front() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fe37b54a47d28015829196cb5abec05" name="a2fe37b54a47d28015829196cb5abec05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe37b54a47d28015829196cb5abec05">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a> &amp; <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7a5d1c7410208d7ce8f13497e31dd87" name="ac7a5d1c7410208d7ce8f13497e31dd87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a5d1c7410208d7ce8f13497e31dd87">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html">Vector</a> &amp; <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33d74c42f23507143e398fa100afb0a8" name="a33d74c42f23507143e398fa100afb0a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d74c42f23507143e398fa100afb0a8">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a590045eeb20d3c474dffbada9d9b59d3">reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e7b22c1691e059676f60734730e9b91" name="a2e7b22c1691e059676f60734730e9b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7b22c1691e059676f60734730e9b91">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcba035109febbe55cba2a25f8483ba6" name="adcba035109febbe55cba2a25f8483ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcba035109febbe55cba2a25f8483ba6">&#9670;&#160;</a></span>pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::pop_back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28f3da8ad294c0d45b2b41eb28ce0a8c" name="a28f3da8ad294c0d45b2b41eb28ce0a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f3da8ad294c0d45b2b41eb28ce0a8c">&#9670;&#160;</a></span>push_back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab26fb01ec95c0b58164bedcd3097ff9" name="aab26fb01ec95c0b58164bedcd3097ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab26fb01ec95c0b58164bedcd3097ff9">&#9670;&#160;</a></span>push_back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#aa0d46e34338185ed330102229ecb4b0e">value_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fd9c955299805531f0e8924946f9fd5" name="a2fd9c955299805531f0e8924946f9fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd9c955299805531f0e8924946f9fd5">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>newCapacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa33cb6ea7ef1dd4676db9d77a8c66e48" name="aa33cb6ea7ef1dd4676db9d77a8c66e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33cb6ea7ef1dd4676db9d77a8c66e48">&#9670;&#160;</a></span>resize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a808bc52f35d2d195c09249cd1043a7e1" name="a808bc52f35d2d195c09249cd1043a7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808bc52f35d2d195c09249cd1043a7e1">&#9670;&#160;</a></span>resize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVector.html#a5fcf0c5b1f4b2f7e9b18aa2ed1e6c900">const_reference</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6454ce193263b8000d4c18cb0c3a0c8" name="ad6454ce193263b8000d4c18cb0c3a0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6454ce193263b8000d4c18cb0c3a0c8">&#9670;&#160;</a></span>shrink_to_fit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::shrink_to_fit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e7e854146e2b56c2c7149eddbc0a1e8" name="a9e7e854146e2b56c2c7149eddbc0a1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7e854146e2b56c2c7149eddbc0a1e8">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector.html#abafb4cad9801440d5379d777088cf3ef">size_type</a> <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04719915f34b27674e1eca2c42e48eb2" name="a04719915f34b27674e1eca2c42e48eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04719915f34b27674e1eca2c42e48eb2">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classVector.html">Vector</a>&lt; T &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector.html">Vector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacija šiai klasei sugeneruota iš šio failo:<ul>
+<li>include/<a class="el" href="Vector_8h_source.html">Vector.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Sugeneruota&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

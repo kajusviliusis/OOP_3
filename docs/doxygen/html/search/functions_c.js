@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['reserve_0',['reserve',['../classVector.html#a2fd9c955299805531f0e8924946f9fd5',1,'Vector']]],
+  ['resize_1',['resize',['../classVector.html#aa33cb6ea7ef1dd4676db9d77a8c66e48',1,'Vector::resize(size_type count)'],['../classVector.html#a808bc52f35d2d195c09249cd1043a7e1',1,'Vector::resize(size_type count, const_reference value)']]],
+  ['rikiuotipagalgalutinimed_2',['rikiuotipagalgalutinimed',['../my__lib_8h.html#a211e71cbc8ece1b2ca88c9d26c16f8b4',1,'rikiuotiPagalGalutiniMed(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a211e71cbc8ece1b2ca88c9d26c16f8b4',1,'rikiuotiPagalGalutiniMed(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp']]],
+  ['rikiuotipagalgalutinivid_3',['rikiuotipagalgalutinivid',['../my__lib_8h.html#ab2684292f7b898c56c03e523345fc4e5',1,'rikiuotiPagalGalutiniVid(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp'],['../my__lib_8cpp.html#ab2684292f7b898c56c03e523345fc4e5',1,'rikiuotiPagalGalutiniVid(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp']]],
+  ['rikiuotipavarde_4',['rikiuotipavarde',['../my__lib_8h.html#a1912f5fe2e8847daad5be729d2fcbb72',1,'rikiuotiPavarde(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a1912f5fe2e8847daad5be729d2fcbb72',1,'rikiuotiPavarde(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp']]],
+  ['rikiuotistudentus_5',['rikiuotiStudentus',['../my__lib_8h.html#a59185f0a42305d1220868156e940ffe6',1,'my_lib.h']]],
+  ['rikiuotivarda_6',['rikiuotivarda',['../my__lib_8h.html#a94f68fdcfd637506352039d180a74fcd',1,'rikiuotiVarda(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a94f68fdcfd637506352039d180a74fcd',1,'rikiuotiVarda(const Studentas &amp;A, const Studentas &amp;B):&#160;my_lib.cpp']]],
+  ['rodytirez_7',['rodytirez',['../my__lib_8h.html#a2578931e6affec1c6bc23534d4836c47',1,'rodytiRez(const Vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a2578931e6affec1c6bc23534d4836c47',1,'rodytiRez(const Vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp']]],
+  ['rodytirezultatus_8',['rodytirezultatus',['../my__lib_8h.html#a5d07a127749bbf87545fa8c0e35268c8',1,'rodytiRezultatus(const Vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp'],['../my__lib_8cpp.html#a5d07a127749bbf87545fa8c0e35268c8',1,'rodytiRezultatus(const Vector&lt; Studentas &gt; &amp;studentai):&#160;my_lib.cpp']]]
+];

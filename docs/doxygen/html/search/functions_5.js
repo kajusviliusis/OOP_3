@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3d_0',['operator=',['../classStudentas.html#aa58bf289c42552bffd4901ddad4c5f1c',1,'Studentas::operator=(const Studentas &amp;s)'],['../classStudentas.html#a903ea4aad18c548a3883ec46929f44fe',1,'Studentas::operator=(Studentas &amp;&amp;s)']]]
+  ['front_0',['front',['../classVector.html#a2f2e14b2a9a0041c783b5ad44dd59593',1,'Vector::front()'],['../classVector.html#a78dc531e4c79c33f8e7d4574a155f529',1,'Vector::front() const']]]
 ];

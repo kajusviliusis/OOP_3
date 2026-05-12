@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['setegz_0',['setEgz',['../classStudentas.html#af7a2740c86cee79b07ea47b3eb819280',1,'Studentas']]],
-  ['setgalmed_1',['setGalMed',['../classStudentas.html#a227bcb6fce20db0030eba11058c5843c',1,'Studentas']]],
-  ['setgalvid_2',['setGalVid',['../classStudentas.html#a177ec55c133ce115dec0beed5cf1ea61',1,'Studentas']]],
-  ['setpavarde_3',['setPavarde',['../classZmogus.html#a604c508fa587671a7d1df8f0522c63e9',1,'Zmogus']]],
-  ['setvardas_4',['setVardas',['../classZmogus.html#a1cfb82338adcdbeecccebb8c77b4aaf4',1,'Zmogus']]],
-  ['skaiciuotigalutinisumed_5',['skaiciuotiGalutiniSuMed',['../classStudentas.html#a75d7a3410212c0ff30880e434c83475b',1,'Studentas']]],
-  ['skaiciuotigalutinisuvid_6',['skaiciuotiGalutiniSuVid',['../classStudentas.html#aaf13ffdbb7cac249c7a3a89da443eff4',1,'Studentas']]],
-  ['studentas_7',['studentas',['../classStudentas.html',1,'Studentas'],['../classStudentas.html#ab459e995e8c9b24cdc9aec5b09a66539',1,'Studentas::Studentas()'],['../classStudentas.html#ae3da0b26b08f3895848fb0d6a63e5223',1,'Studentas::Studentas(const std::string &amp;vardas, const std::string &amp;pavarde, int egz, const std::vector&lt; int &gt; &amp;nd)'],['../classStudentas.html#a919251ec5bbb012f622a9bedfd804a21',1,'Studentas::Studentas(const Studentas &amp;s)'],['../classStudentas.html#a7e3eca0d11538d8ee68b8f008d0a9927',1,'Studentas::Studentas(Studentas &amp;&amp;s)']]],
-  ['studentas_2eh_8',['Studentas.h',['../Studentas_8h.html',1,'']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp'],['../vector__benchmark_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;vector_benchmark.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['matuotipushback_2',['matuotiPushBack',['../vector__benchmark_8cpp.html#aca133185a71f918585e7965ef3dfd795',1,'vector_benchmark.cpp']]],
+  ['my_5flib_2ecpp_3',['my_lib.cpp',['../my__lib_8cpp.html',1,'']]],
+  ['my_5flib_2eh_4',['my_lib.h',['../my__lib_8h.html',1,'']]]
 ];

@@ -1,5 +1,3 @@
-//pridet 5 metodu aprasa dar, doxygen dokumentacija, tada setup faila
-
 ## Programos aprašymas
 
 Programa skirta apdoroti studentų duomenis ir analizuoti jų akademinius rezultatus. Ji leidžia:

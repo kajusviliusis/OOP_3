@@ -4,23 +4,28 @@
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$iomanip$>$}\newline
 {\ttfamily \#include $<$algorithm$>$}\newline
-{\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$cctype$>$}\newline
 {\ttfamily \#include $<$chrono$>$}\newline
 {\ttfamily \#include $<$sstream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 Įtraukimo priklausomybių diagrama my\+\_\+lib.\+cpp\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__lib_8cpp__incl}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Funkcijos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{my__lib_8cpp_aa40071e156e3c0092270f12a5fb8a568}{rodyti\+Rezultatus}} (const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
+void \mbox{\hyperlink{my__lib_8cpp_a5d07a127749bbf87545fa8c0e35268c8}{rodyti\+Rezultatus}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
 \item 
 void \mbox{\hyperlink{my__lib_8cpp_a4b67dd0dc00728a30a6dfd340ec54ad6}{generuoti\+Pazymius}} (\mbox{\hyperlink{classStudentas}{Studentas}} \&s)
 \item 
-void \mbox{\hyperlink{my__lib_8cpp_a9691bf4330330f795de00757a31c3c09}{generuoti\+Studentus}} (std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
+void \mbox{\hyperlink{my__lib_8cpp_a885bed43d8560d6085a16509846a4866}{generuoti\+Studentus}} (\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
 \item 
-void \mbox{\hyperlink{my__lib_8cpp_ad5e31f0247674f1f9fc3484f7f2034f3}{rodyti\+Rez}} (const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
+void \mbox{\hyperlink{my__lib_8cpp_a2578931e6affec1c6bc23534d4836c47}{rodyti\+Rez}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai)
 \item 
 bool \mbox{\hyperlink{my__lib_8cpp_a94f68fdcfd637506352039d180a74fcd}{rikiuoti\+Varda}} (const \mbox{\hyperlink{classStudentas}{Studentas}} \&A, const \mbox{\hyperlink{classStudentas}{Studentas}} \&B)
 \item 
@@ -30,11 +35,11 @@ bool \mbox{\hyperlink{my__lib_8cpp_ab2684292f7b898c56c03e523345fc4e5}{rikiuoti\+
 \item 
 bool \mbox{\hyperlink{my__lib_8cpp_a211e71cbc8ece1b2ca88c9d26c16f8b4}{rikiuoti\+Pagal\+Galutini\+Med}} (const \mbox{\hyperlink{classStudentas}{Studentas}} \&A, const \mbox{\hyperlink{classStudentas}{Studentas}} \&B)
 \item 
-void \mbox{\hyperlink{my__lib_8cpp_a2cef6a28805a2e6f70c2ae0af31c497c}{nuskaityti\+Faila\+Testavimui}} (std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai, int kartai)
+void \mbox{\hyperlink{my__lib_8cpp_a49e9dc19828cb97b5fe0e7f4f6e7c787}{nuskaityti\+Faila\+Testavimui}} (\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&studentai, int kartai)
 \item 
 void \mbox{\hyperlink{my__lib_8cpp_ae61f71c380bfa061ec1cb48611ce3d90}{generuoti\+Faila}} (int studentu\+Sk)
 \item 
-void \mbox{\hyperlink{my__lib_8cpp_ab6610dee2069d0b45b6abe86ee9e126d}{isvesti\+Du\+Failus}} (const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&vargsai, const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&kieti)
+void \mbox{\hyperlink{my__lib_8cpp_adb9ef643293e8c59f8d1aa7f10b75137}{isvesti\+Du\+Failus}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&vargsai, const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&kieti)
 \item 
 void \mbox{\hyperlink{my__lib_8cpp_acbdcb1c78b562e6858a798f4a390bdca}{atlikti\+Pirma\+Tyrima}} ()
 \end{DoxyCompactItemize}
@@ -59,23 +64,23 @@ void \mbox{\hyperlink{my__lib_8cpp_acbdcb1c78b562e6858a798f4a390bdca}{atlikti\+P
 \doxysubsubsection{\texorpdfstring{generuotiPazymius()}{generuotiPazymius()}}
 {\footnotesize\ttfamily void generuoti\+Pazymius (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStudentas}{Studentas}} \&}]{s }\end{DoxyParamCaption})}
 
-\Hypertarget{my__lib_8cpp_a9691bf4330330f795de00757a31c3c09}\label{my__lib_8cpp_a9691bf4330330f795de00757a31c3c09} 
+\Hypertarget{my__lib_8cpp_a885bed43d8560d6085a16509846a4866}\label{my__lib_8cpp_a885bed43d8560d6085a16509846a4866} 
 \index{my\_lib.cpp@{my\_lib.cpp}!generuotiStudentus@{generuotiStudentus}}
 \index{generuotiStudentus@{generuotiStudentus}!my\_lib.cpp@{my\_lib.cpp}}
 \doxysubsubsection{\texorpdfstring{generuotiStudentus()}{generuotiStudentus()}}
-{\footnotesize\ttfamily void generuoti\+Studentus (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void generuoti\+Studentus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
 
-\Hypertarget{my__lib_8cpp_ab6610dee2069d0b45b6abe86ee9e126d}\label{my__lib_8cpp_ab6610dee2069d0b45b6abe86ee9e126d} 
+\Hypertarget{my__lib_8cpp_adb9ef643293e8c59f8d1aa7f10b75137}\label{my__lib_8cpp_adb9ef643293e8c59f8d1aa7f10b75137} 
 \index{my\_lib.cpp@{my\_lib.cpp}!isvestiDuFailus@{isvestiDuFailus}}
 \index{isvestiDuFailus@{isvestiDuFailus}!my\_lib.cpp@{my\_lib.cpp}}
 \doxysubsubsection{\texorpdfstring{isvestiDuFailus()}{isvestiDuFailus()}}
-{\footnotesize\ttfamily void isvesti\+Du\+Failus (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{vargsai,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{kieti }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void isvesti\+Du\+Failus (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{vargsai,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{kieti }\end{DoxyParamCaption})}
 
-\Hypertarget{my__lib_8cpp_a2cef6a28805a2e6f70c2ae0af31c497c}\label{my__lib_8cpp_a2cef6a28805a2e6f70c2ae0af31c497c} 
+\Hypertarget{my__lib_8cpp_a49e9dc19828cb97b5fe0e7f4f6e7c787}\label{my__lib_8cpp_a49e9dc19828cb97b5fe0e7f4f6e7c787} 
 \index{my\_lib.cpp@{my\_lib.cpp}!nuskaitytiFailaTestavimui@{nuskaitytiFailaTestavimui}}
 \index{nuskaitytiFailaTestavimui@{nuskaitytiFailaTestavimui}!my\_lib.cpp@{my\_lib.cpp}}
 \doxysubsubsection{\texorpdfstring{nuskaitytiFailaTestavimui()}{nuskaitytiFailaTestavimui()}}
-{\footnotesize\ttfamily void nuskaityti\+Faila\+Testavimui (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai,  }\item[{int}]{kartai }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void nuskaityti\+Faila\+Testavimui (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai,  }\item[{int}]{kartai }\end{DoxyParamCaption})}
 
 \Hypertarget{my__lib_8cpp_a211e71cbc8ece1b2ca88c9d26c16f8b4}\label{my__lib_8cpp_a211e71cbc8ece1b2ca88c9d26c16f8b4} 
 \index{my\_lib.cpp@{my\_lib.cpp}!rikiuotiPagalGalutiniMed@{rikiuotiPagalGalutiniMed}}
@@ -101,15 +106,15 @@ void \mbox{\hyperlink{my__lib_8cpp_acbdcb1c78b562e6858a798f4a390bdca}{atlikti\+P
 \doxysubsubsection{\texorpdfstring{rikiuotiVarda()}{rikiuotiVarda()}}
 {\footnotesize\ttfamily bool rikiuoti\+Varda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStudentas}{Studentas}} \&}]{A,  }\item[{const \mbox{\hyperlink{classStudentas}{Studentas}} \&}]{B }\end{DoxyParamCaption})}
 
-\Hypertarget{my__lib_8cpp_ad5e31f0247674f1f9fc3484f7f2034f3}\label{my__lib_8cpp_ad5e31f0247674f1f9fc3484f7f2034f3} 
+\Hypertarget{my__lib_8cpp_a2578931e6affec1c6bc23534d4836c47}\label{my__lib_8cpp_a2578931e6affec1c6bc23534d4836c47} 
 \index{my\_lib.cpp@{my\_lib.cpp}!rodytiRez@{rodytiRez}}
 \index{rodytiRez@{rodytiRez}!my\_lib.cpp@{my\_lib.cpp}}
 \doxysubsubsection{\texorpdfstring{rodytiRez()}{rodytiRez()}}
-{\footnotesize\ttfamily void rodyti\+Rez (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void rodyti\+Rez (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
 
-\Hypertarget{my__lib_8cpp_aa40071e156e3c0092270f12a5fb8a568}\label{my__lib_8cpp_aa40071e156e3c0092270f12a5fb8a568} 
+\Hypertarget{my__lib_8cpp_a5d07a127749bbf87545fa8c0e35268c8}\label{my__lib_8cpp_a5d07a127749bbf87545fa8c0e35268c8} 
 \index{my\_lib.cpp@{my\_lib.cpp}!rodytiRezultatus@{rodytiRezultatus}}
 \index{rodytiRezultatus@{rodytiRezultatus}!my\_lib.cpp@{my\_lib.cpp}}
 \doxysubsubsection{\texorpdfstring{rodytiRezultatus()}{rodytiRezultatus()}}
-{\footnotesize\ttfamily void rodyti\+Rezultatus (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void rodyti\+Rezultatus (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ \mbox{\hyperlink{classStudentas}{Studentas}} $>$ \&}]{studentai }\end{DoxyParamCaption})}
 
