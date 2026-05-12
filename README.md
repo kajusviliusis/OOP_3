@@ -1,4 +1,4 @@
-//tada pridet doxygen dokumentacija, readme.md, tada setup faila
+//tada pridet doxygen dokumentacija, tada setup faila
 
 ## Programos aprašymas
 
@@ -40,15 +40,25 @@ cmake --build .
 ```
 
 ## v3.0
-aprasas ...
+Šio testo metu buvo matuojamas <code>std::vector</code> ir savarankiškai realizuotos <code>Vector</code> užpildymo greitis, palaipsniui didinant elementų kiekį nuo 10000 iki 100000000 elementų.
 
-5 metodu realizacijos aprodytos ...
+| Vektoriaus elementų (Studentų) kiekis | Programos veikimo laikas std::vector (s) | Programos veikimo laikas Vector (s) |
+| ---- | ----- | ---- |
+| 10000 | 7.7271e-05 | 5.5454e-05 |
+| 100000 | 0.000651865 | 0.000768337 |
+| 1000000 | 0.0066142 | 0.00787653 |
+| 10000000 | 0.0750502 | 0.0892851 |
+| 100000000 | 0.658619 | 0.806093 |
 
-benchmarko lenteles dvi (s) kita (realloc) ...
+
+Atlikus testavimą su 100000000 elementų, nustatyta, kad tiek <code>std::vector</code>, tiek <code>Vector</code> klasė atliko vienodą kiekį atminties perskirstymų.
+
+| Vektoriaus elementų (Studentų) kiekis | Perskirstymų kiekis std::vector | Perskirstymų kiekis Vector klasei |
+| --- | --- | --- |
+| 100000000 | 28 | 28 |
 
 
-
-spartos palyginimas programos ...
+Programos spartos palyginimas su <code>std::vector</code> ir <code>Vector</code>. Testavimas atliekamas naudojant 3 strategiją, lyginant v1.5 programos versiją su dabartine (v3.0) versija, kurioje įgyvendinta <code>Vector</code> klasė.
 
 | Įrašai    | Vector (s) | std::vector (s) | Skirtumas (s) |
 |------------|-------------|-----------------|----------------|
